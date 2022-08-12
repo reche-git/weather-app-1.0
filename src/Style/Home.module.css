@@ -1,0 +1,135 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  height: 640px;
+  width: 360px;
+  margin: auto;
+  border-radius: 35px;
+  animation-name: page-load;
+  animation-duration: 1s;
+  background-image: url("https://i.pinimg.com/564x/d6/2d/1d/d62d1de38c4b4fde5ac4541eed207bd7.jpg");
+}
+
+@keyframes page-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wellcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: large;
+}
+
+.city_name {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  height: 250px;
+  width: 250px;
+}
+
+.temperature p {
+  font-size: 40px;
+  font-weight: bold;
+  margin: auto;
+  color: #ffffff;
+  text-shadow: 4px 4px 22px rgba(43, 43, 43, 1);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description img {
+  display: flex;
+  align-self: center;
+  height: 100px;
+  width: 100px;
+}
+
+.description h2 {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  text-shadow: 4px 4px 22px rgba(43, 43, 43, 1);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  height: 50px;
+  width: 360px;
+  padding: 20px;
+}
+
+.buttons button {
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: #d1d1ff;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  height: 48px;
+  padding: 0 32px;
+  margin: 20px;
+  width: 110px;
+  font-size: 18px;
+  border-radius: 15px;
+  color: #36395a;
+}
+.buttons button:active {
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
+}
+
+.city_name_fetch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  animation-name: setDataAnimation;
+  animation-duration: 1s;
+}
+
+.city_name_fetch h1 {
+  text-align: center;
+}
+
+@keyframes setDataAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

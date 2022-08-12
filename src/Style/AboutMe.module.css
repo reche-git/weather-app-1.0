@@ -1,0 +1,155 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  height: 640px;
+  width: 360px;
+  margin: auto;
+  border-radius: 35px;
+  background-image: url("https://images.wallpaperscraft.com/image/single/code_programming_monitor_209719_360x640.jpg");
+  animation-name: page-load;
+  animation-duration: 1s;
+}
+
+@keyframes page-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.photoContainer {
+  display: flex;
+  flex-direction: column;
+  animation: swoop-right;
+  animation-duration: 1.5s;
+}
+
+@keyframes swoop-right {
+  0% {
+    margin-right: 300px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.photo {
+  height: 250px;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 35px;
+  margin: 40px 360px 0px 0px;
+  background-image: url("https://image.shutterstock.com/mosaic_250/216249289/1211244205/stock-vector-unique-fox-logo-design-1211244205.jpg");
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding: 5px;
+  margin: 10px 360px 0 0;
+  background: linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
+  );
+  border-radius: 35px;
+}
+
+.presentationContainer {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 72%, rgba(93,0,133,1) 100%);
+  height: 500px;
+  width: 300px;
+  margin: -280px 0 30px 320px;
+  border-radius: 35px;
+  padding: 0;
+  animation: swoop-left;
+  animation-duration: 1.5s;
+}
+
+@keyframes swoop-left {
+  0% {
+    margin-left: 500px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.presentationContainer:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.presentation h1 {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  margin-top: 50px;
+  border-bottom: 1px solid #36395a;
+  color: rgb(182, 182, 182);
+}
+
+.presentation p {
+  font-family: "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  padding: 0px 10px 0 10px;
+  color: rgb(182, 182, 182);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  height: 50px;
+  width: 360px;
+  padding: 20px;
+}
+
+.buttons button {
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: #d1d1ff;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  height: 48px;
+  padding: 0 32px;
+  margin: 20px;
+  width: 110px;
+  font-size: 18px;
+  border-radius: 15px;
+  color: #36395a;
+}
+.buttons button:active {
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
+}
